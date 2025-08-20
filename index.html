@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders - Versione Moderna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-overlay">
+            <div class="score-panel">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="lives">Lives: <span id="lives">3</span></div>
+                <div class="level">Level: <span id="level">1</span></div>
+            </div>
+            <div class="game-over" id="gameOver" style="display: none;">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn">Restart Game</button>
+            </div>
+            <div class="start-screen" id="startScreen">
+                <h1>Space Invaders</h1>
+                <h2>Versione Moderna</h2>
+                <div class="controls">
+                    <p>Controlli:</p>
+                    <p>← → Movimento</p>
+                    <p>Spazio: Spara</p>
+                    <p>P: Pausa</p>
+                    <p>T: Cambia Modalità</p>
+                </div>
+                <div class="game-mode" id="gameModeIndicator">
+                    <p>Modalità: <span id="currentMode">Normale</span></p>
+                </div>
+                <button id="startBtn">Start Game</button>
+            </div>
+            <div class="pause-screen" id="pauseScreen" style="display: none;">
+                <h2>Pausa</h2>
+                <p>Premi P per continuare</p>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
