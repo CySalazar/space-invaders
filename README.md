@@ -66,7 +66,7 @@ This project was developed as an improved version of the classic Space Invaders,
 
 ## License
 
-This project is distributed under the MIT license. Feel free to modify and share it.
+This project is distributed under the GNU General Public License v3.0. Feel free to modify and share it according to the terms of the GPL v3.
 
 ---
 
