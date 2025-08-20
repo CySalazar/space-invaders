@@ -1,4 +1,4 @@
-// Space Invaders - Versione Moderna
+// Space Invaders - Modern Version
 class Game {
     constructor() {
         this.canvas = document.getElementById('gameCanvas');
@@ -412,7 +412,7 @@ class Game {
     updateModeIndicator() {
         const modeElement = document.getElementById('currentMode');
         if (modeElement) {
-            modeElement.textContent = this.gameMode === 'timeAttack' ? 'Time Attack' : 'Normale';
+            modeElement.textContent = this.gameMode === 'timeAttack' ? 'Time Attack' : 'Normal';
         }
     }
     
